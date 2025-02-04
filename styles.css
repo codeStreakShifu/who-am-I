@@ -696,6 +696,11 @@ span {
     section{
         padding-bottom: 20vh;
     }
+    .skill-progress {
+       
+        height: 10px;
+        
+    }
 }
 
 @media (max-width: 768px) {
@@ -745,6 +750,8 @@ span {
     .home-img1 img {
         width: 60vw;
     }
+
+    
 }
 
 @media (max-width: 480px) {
