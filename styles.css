@@ -409,7 +409,7 @@ span {
 
 .skill-progress {
     background: linear-gradient(90deg, var(--main--color), var(--second--bg--color));
-    height: 25px;
+    height: 15px;
     border-radius: 25px;
     position: relative;
     overflow: hidden;
