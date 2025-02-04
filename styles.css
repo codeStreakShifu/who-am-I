@@ -270,6 +270,10 @@ span {
         overflow-x: hidden;
     }
 
+    .home-content p {
+        font-size: 2.2rem;
+    }
+
     .header {
         padding-top: 2rem;
     }
@@ -334,7 +338,7 @@ span {
     }
 
     .navbar a {
-        font-size: 1.6rem;
+        font-size: 2.4rem;
         margin: 1rem 0;
         text-align: center;
     }
@@ -352,7 +356,7 @@ span {
     }
 
     .home-content p {
-        font-size: 1.4rem;
+        font-size: 2rem;
     }
 
     .home-img1 img {
@@ -383,15 +387,15 @@ span {
     }
 
     .home-content h1 {
-        font-size: 3rem;
+        font-size: 4.5rem;
     }
 
     .home-content h3 {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     .home-content p {
-        font-size: 2rem;
+        font-size: 2.2rem;
         max-width: 90vw;
         text-align: justify;
     }
