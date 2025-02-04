@@ -221,17 +221,21 @@ span {
 }
 
 .btn-group {
-    display: flex;
+    margin-top: -7rem;
     align-items: center;
-    gap: 1.5rem;
+    padding-bottom: 3rem;
+
 }
 
-.btn-group a:nth-of-type(2) {
+
+
+ .btn-group a:nth-of-type(2) {
     background-color: black;
+    margin-left: 10px;
     color: var(--main--color);
     border: 2px solid var(--main--color);
     box-shadow: 0 0 25px var(--main--color);
-}
+} 
 
 .btn-group a:nth-of-type(2):hover {
     box-shadow: 0 0 25px var(--main--color);
@@ -347,6 +351,173 @@ span {
         font-size: 1.2rem;
     }
 }
+
+
+
+/* for skills css and design layout */
+.skills {
+    margin-top: 5rem;
+}
+
+.container h1 {
+    font-size: 6rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--text--color);
+    text-shadow: 0 0 15px var(--main--color);
+    letter-spacing: 0.1em;
+}
+
+.skills-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.skill-item {
+    flex: 1 1 calc(50% - 20px);
+    margin-bottom: 0px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.skill-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px var(--main--color);
+}
+
+.skill-item h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: var(--text--color);
+    text-shadow: 0 0 3px var(--main--color);
+    letter-spacing: 0.05em;
+}
+
+.skill-bar {
+    background: #ddd;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 10px 0;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.skill-progress {
+    background: linear-gradient(90deg, var(--main--color), var(--second--bg--color));
+    height: 25px;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    animation: loadSkill 2s ease-in-out forwards;
+}
+
+.skill-progress::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    animation: shine 2s infinite;
+}
+
+@keyframes shine {
+    0% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes loadSkill {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: var(--skill-level);
+    }
+}
+
+/* for projects css and design layout */
+.projects {
+    margin-top: 7rem;
+}
+
+.projects-header {
+    font-size: 6rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--text--color);
+    text-shadow: 0 0 15px var(--main--color);
+    letter-spacing: 0.1em;
+}
+
+.project-category {
+    font-size: 3rem;
+    text-align: center;
+    margin: 4rem 0;
+    color: black;
+    text-shadow: 0 0 10px var(--main--color);
+}
+
+.projects-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.project-item {
+    flex: 1 1 calc(33% - 20px);
+    margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px var(--main--color);
+}
+
+.project-item img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    font-size: 1.6rem;
+    color: var(--text--color);
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .project-item {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .project-item {
+        flex: 1 1 100%;
+    }
+}
+
 /* ---------------------------------------------------------------- */
 /* Media Queries */
 @media (max-width: 1200px) {
