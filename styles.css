@@ -281,7 +281,7 @@ span {
 }
 
 .education h1 {
-    font-size: 7rem;
+    font-size: 8rem;
     margin-bottom: 2rem;
     text-align: center;
     color: var(--text--color);
@@ -310,13 +310,13 @@ span {
 }
 
 .education-item h2 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     margin-bottom: 1rem;
     color: var(--main--color);
 }
 
 .education-item p {
-    font-size: 1.6rem;
+    font-size: 2.6rem;
     line-height: 1.5;
     color: var(--text--color);
 }
@@ -329,15 +329,19 @@ span {
 
     .education h1 {
         margin-top: 15rem;
-        font-size: 3rem;
+        font-size: 5rem;
     }
 
     .education-item h2 {
-        font-size: 2rem;
+        font-size: 4rem;
     }
 
     .education-item p {
-        font-size: 1.4rem;
+        font-size: 3.2rem;
+    }
+    #school{
+        color: var(--main--color);
+        font-style: italic;
     }
 }
 
@@ -346,17 +350,7 @@ span {
         padding: 3rem 3%;
     }
 
-    .education h1 {
-        font-size: 2.5rem;
-    }
 
-    .education-item h2 {
-        font-size: 1.8rem;
-    }
-
-    .education-item p {
-        font-size: 1.2rem;
-    }
 }
 
 
