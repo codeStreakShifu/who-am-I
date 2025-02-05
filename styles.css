@@ -300,7 +300,6 @@ span {
     border-radius: 1rem;
     box-shadow: 0 0 25px var(--main--color);
     border-left: 8px solid var(--main--color);
-    background: url('./images/educ-bg.jpg');
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
