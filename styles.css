@@ -356,7 +356,7 @@ span {
 
 /* for skills css and design layout */
 .skills {
-    margin-top: 5rem;
+    margin-top: 8rem;
 }
 
 .container h1 {
@@ -409,7 +409,7 @@ span {
 
 .skill-progress {
     background: linear-gradient(90deg, var(--main--color), var(--second--bg--color));
-    height: 15px;
+    height: 12px;
     border-radius: 25px;
     position: relative;
     overflow: hidden;
@@ -698,7 +698,7 @@ span {
     }
     .skill-progress {
        
-        height: 10px;
+        height: 8px;
         
     }
 }
@@ -790,6 +790,8 @@ span {
         max-width: 90vw;
         text-align: justify;
     }
+
+    
 
    
 }
