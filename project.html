@@ -24,11 +24,13 @@
     <section class="projects" id="projects">
         <div class="container">
             <h1 data-aos="fade-down" data-aos-duration="500" data-aos-easing="ease-in-out">Projects</h1>
+           
             
+
             <h2 class="project-category" data-aos="fade-down" data-aos-duration="500" data-aos-easing="ease-in-out">Logo Designs</h2>
             <div class="projects-content">
                 <div class="project-item" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                    <img src="./images/projects/logo1.png" alt="Logo 1">
+                    <img id="thumbnail" src="./images/projects/logo1.png" alt="Logo 1">
                     <p>Logo Design of Debarthe Publication</p>
                 </div>
                 <div class="project-item" data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-in-out">
@@ -67,6 +69,7 @@
                 
                 <!-- Add more book cover items as needed -->
             </div>
+
             
             <h2 class="project-category" data-aos="fade-down" data-aos-duration="500" data-aos-easing="ease-in-out">Website Designs</h2>
             <div class="projects-content">
@@ -82,6 +85,12 @@
             </div>
         </div>
     </section>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="fullImage">
+    </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
